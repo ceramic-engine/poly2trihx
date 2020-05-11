@@ -8,7 +8,7 @@ class Point
 	public var y:Float;
 
 	/// The edges this point constitutes an upper ending point
-	#if haxe3
+	#if (haxe_ver >= 3)
 	public var edge_list(get, null):Array<Edge>;
 	#else
 	public var edge_list(get_edge_list, null):Array<Edge>;

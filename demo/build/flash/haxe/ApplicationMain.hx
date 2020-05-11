@@ -131,7 +131,7 @@ class ApplicationMain {
 
 #end
 
-#if haxe3 @:build(DocumentClass.build()) #end
+#if (haxe_ver >= 3) @:build(DocumentClass.build()) #end
 class DocumentClass extends me.nerik.poly2trihx.Demo { }
 
 #else

@@ -6,7 +6,7 @@ class SweepContext
 	public var points:Array<Point>;
 	public var edge_list:Array<Edge>;
 
-	#if haxe3
+	#if (haxe_ver >= 3)
 	public var map:Map<String,Triangle>;
 	#else
 	public var map:Hash<Triangle>;
@@ -26,7 +26,7 @@ class SweepContext
 		triangles = new Array();
 		points = new Array();
 		edge_list = new Array();
-		#if haxe3
+		#if (haxe_ver >= 3)
 		map = new Map();
 		#else
 		map = new Hash();
