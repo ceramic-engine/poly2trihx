@@ -6,5 +6,6 @@
     "description":  "poly2trihx is an Haxe port of the poly2tri library, an excellent Delaunay triangulation library, which supports constrained edges and holes.",
     "version":      "0.1.4",
     "releasenote":  "integrated Nicolas fix (meshClean stack overflow) + support for OpenFl",
+    "classPath":    "src/",
     "contributors": ["nerik"]
 }

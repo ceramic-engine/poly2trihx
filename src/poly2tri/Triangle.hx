@@ -1,4 +1,4 @@
-package org.poly2tri;
+package poly2tri;
 
 class Triangle 
 {

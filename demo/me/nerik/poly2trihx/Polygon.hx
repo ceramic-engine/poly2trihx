@@ -1,7 +1,7 @@
 package me.nerik.poly2trihx;
 
 import nme.display.Sprite;
-import org.poly2tri.Point;
+import poly2tri.Point;
 
 enum PolygonState 
 {

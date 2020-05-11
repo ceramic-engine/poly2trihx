@@ -1,6 +1,6 @@
 package me.nerik.poly2trihx;
 
-import org.poly2tri.Point;
+import poly2tri.Point;
 
 class TestPoints 
 {

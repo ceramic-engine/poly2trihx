@@ -7,8 +7,8 @@ import nme.events.MouseEvent;
 import nme.Lib;
 import nme.text.TextField;
 import nme.ui.Keyboard;
-import org.poly2tri.VisiblePolygon;
-import org.poly2tri.Point;
+import poly2tri.VisiblePolygon;
+import poly2tri.Point;
 
 class Demo extends Sprite 
 {

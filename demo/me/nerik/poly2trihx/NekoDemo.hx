@@ -1,7 +1,7 @@
 package me.nerik.poly2trihx;
 
-import org.poly2tri.VisiblePolygon;
-import org.poly2tri.Point;
+import poly2tri.VisiblePolygon;
+import poly2tri.Point;
 
 class NekoDemo
 {

@@ -1,4 +1,4 @@
-package org.poly2tri.tests;
+package poly2tri.tests;
 
 #if flash
 import flash.display.Sprite;
