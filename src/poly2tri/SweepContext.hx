@@ -42,9 +42,9 @@ class SweepContext
 
     inline function addPoints(points:Array<Point>) 
     {
-        for (point in points)
+        for (i in 0...points.length)
         {
-            this.points.push( point );
+            this.points.push( points[i] );
         }
     }
 
@@ -81,8 +81,9 @@ class SweepContext
         var ymax = points[0].y;
 
         // Calculate bounds
-        for (p in points) 
+        for (i in 0...points.length) 
         {
+            var p = points[i];
             if (p.x > xmax) xmax = p.x;
             if (p.x < xmin) xmin = p.x;
             if (p.y > ymax) ymax = p.y;
