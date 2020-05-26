@@ -2,46 +2,49 @@ package poly2tri;
 
 class Edge 
 {
-	public var p:Point;
-	public var q:Point;
+    public var p:Point;
+    public var q:Point;
 
-	public function new(p1:Point, p2:Point) 
-	{
-		if (p1==null || p2==null) throw "Edge::new p1 or p2 is null";
+    public function new(p1:Point, p2:Point) 
+    {
+        reset(p1, p2);
+    }
 
-		var swap = false;
+    inline public function reset(p1:Point, p2:Point) {
 
-		if (p1.y > p2.y)
-		{
-			swap = true;
-		}
-		else if (p1.y == p2.y)
-		{
-			if (p1.x == p2.x) throw "Edge::repeat points " + p1;
+        if (p1==null || p2==null) throw "Edge::new p1 or p2 is null";
 
-			swap = (p1.x > p2.x);
-		}
+        var swap = false;
 
+        if (p1.y > p2.y)
+        {
+            swap = true;
+        }
+        else if (p1.y == p2.y)
+        {
+            if (p1.x == p2.x) throw "Edge::repeat points " + p1;
 
-		if (swap)
-		{
-			q = p1;
-			p = p2;
-		}
-		else
-		{
-			p = p1;
-			q = p2;
-		}
-
-		q.edge_list.push( this );
-	}
+            swap = (p1.x > p2.x);
+        }
 
 
+        if (swap)
+        {
+            q = p1;
+            p = p2;
+        }
+        else
+        {
+            p = p1;
+            q = p2;
+        }
 
-	public function toString() 
-	{
-		return "Edge(" + this.p + ", " + this.q + ")";
-	}
+        q.edge_list.push( this );
+    }
+
+    public function toString() 
+    {
+        return "Edge(" + this.p + ", " + this.q + ")";
+    }
 
 }
