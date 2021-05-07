@@ -70,7 +70,7 @@ class ApplicationMain {
 		else
 		{
 			var instance = Type.createInstance(DocumentClass, []);
-			if (Std.is(instance, flash.display.DisplayObject)) {
+			if (Std.isOfType(instance, flash.display.DisplayObject)) {
 				flash.Lib.current.addChild(cast instance);
 			}
 		}
@@ -122,7 +122,7 @@ class ApplicationMain {
 		else
 		{
 			var instance = Type.createInstance(DocumentClass, []);
-			if (Std.is(instance, flash.display.DisplayObject)) {
+			if (Std.isOfType(instance, flash.display.DisplayObject)) {
 				flash.Lib.current.addChild(cast instance);
 			}
 		}

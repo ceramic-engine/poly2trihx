@@ -100,7 +100,7 @@ class ApplicationMain {
 		if (Reflect.field(me.nerik.poly2trihx.Demo, "main") == null)
 		{
 			var mainDisplayObj = Type.createInstance(DocumentClass, []);
-			if (Std.is(mainDisplayObj, flash.display.DisplayObject))
+			if (Std.isOfType(mainDisplayObj, flash.display.DisplayObject))
 				flash.Lib.current.addChild(cast mainDisplayObj);
 		}
 		else
